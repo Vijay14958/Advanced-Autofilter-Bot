@@ -16,17 +16,17 @@ def who_is_creator(id1, id2):
   return text
     
 class Accounts(object):
-    API_ID = int(environ.get("API_ID", 0))
-    API_HASH = environ.get("API_HASH")
-    BOT_TOKEN = environ.get("BOT_TOKEN")
-    BOT_PLUGINS = environ.get("BOT_PLUGINS", "Midukki")
-    BOT_SESSIONS = environ.get("BOT_SESSION", "Midukki-RoboT")
+    API_ID = int(environ.get("API_ID", 27639102))
+    API_HASH = environ.get("API_HASH",'35142c1407be6264e68fb6bec5dcabd9')
+    BOT_TOKEN = environ.get("BOT_TOKEN",'5831408471:AAG5I4XGr-fiZck2kxTtbZF_xvNHBvsFflA')
+    BOT_PLUGINS = environ.get("BOT_PLUGINS", "VJMovieSearchRobot")
+    BOT_SESSIONS = environ.get("BOT_SESSION", "VJMovieSearchRobot")
 
 class Bots(object):
     BOT_ID = int(environ.get("BOT_ID", Accounts.BOT_TOKEN.split(":")[0]))
-    BOT_NAME = None # "Midukki"
-    BOT_MENTION = None # "@Midukki_Robot"
-    BOT_USERNAME = None # "Midukki_Robot"
+    BOT_NAME = None # "VJMovieSearchRobot"
+    BOT_MENTION = None # "@VJ_Movie_Search_RoBot"
+    BOT_USERNAME = None # "VJ_Movie_Search_RoBot"
     #bot up time
     BOT_START_TIME = time()
 
@@ -39,7 +39,7 @@ class Customize(object):
 
 class Configs(object):
     # admins id
-    ADMINS_ID = [int(admin) if find.search(admin) else admin for admin in environ.get('ADMINS_ID', '5601313788').split()]
+    ADMINS_ID = [int(admin) if find.search(admin) else admin for admin in environ.get('ADMINS_ID', '5606411877').split()]
 
     # bot information   
     COMMAND_PREFIXES = environ.get("COMMAND_PREFIXES", "/")
@@ -48,17 +48,17 @@ class Configs(object):
     START_MESSAGE = environ.get("START_MESSAGE", START_TXT)
 
     # MongoDB information
-    DATABASE_NAME = environ.get("DATABASE_NAME", "Muhammed")
-    DATABASE_URL = environ.get("DATABASE_URL", None)
+    DATABASE_NAME = environ.get("DATABASE_NAME", "VJMovieSearchRobot")
+    DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://Danger123:Danger123@cluster0.t4xrtyu.mongodb.net/?retryWrites=true&w=majority")
     COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
     # Groups & Channels
-    LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-    SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Mo_Tech_YT')
-    CHANNELS = [int(ch) if find.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-    FORCE_SUB = environ.get('FORCE_SUB')
+    LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001844758544))
+    SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/VJ_Bot_Disscussion')
+    CHANNELS = [int(ch) if find.search(ch) else ch for ch in environ.get('CHANNELS', '-1001855754121').split()]
+    FORCE_SUB = environ.get('FORCE_SUB','-1001787446188')
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and find.search(FORCE_SUB) else None
-    FORCES_SUB_LINK = environ.get('FORCE_SUB_LINK')
+    FORCES_SUB_LINK = environ.get('FORCE_SUB_LINK','@VJ_Bots)
 
     # Media Caption
     USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
@@ -69,11 +69,11 @@ class Configs(object):
     FILTER_BUTTONS = {}
 
     # Ads Controls
-    WEB_URL = environ.get("ADS_WEB_URL")
-    WEB_API = environ.get("ADS_WEB_API")
+    WEB_URL = environ.get("MdiskLink.link")
+    WEB_API = environ.get("a21d381121da4bae1dd61d5c7dc7ae8de52e6041")
 
     # other
-    DONATE_LINKS = environ.get("DONATION_LINK", "https://p.paytm.me/xCTH/7yzmtgie")
+    DONATE_LINKS = environ.get("DONATION_LINK", "https://t.me/+z5rBFKnY11JhZTY1")
     LOADING_SYMBOL = bool(environ.get("LOADING_MODE", True))
     LOADING_A = environ.get("LOADING_SYMBOL_A", "⚪️")
     LOADING_B = environ.get("LOADING_SYMBOL_B", "⚫️")
