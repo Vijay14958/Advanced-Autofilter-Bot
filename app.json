@@ -1,6 +1,6 @@
 {
-    "name": "Midukki-RoBoT",
-    "description": "Midukki-RoBoT is an all in one group management bot made for managing your group effectively with some advance security tools & Suit For All Your Needs ❤️",
+    "name": "Advanced-Autofilter-Bot",
+    "description": "Advanced-Autofilter-Bot is an all in one group management bot made for managing your group effectively with some advance security tools & Suit For All Your Needs ❤️",
     "keywords": [
       "telegram",
       "group",
@@ -10,8 +10,8 @@
       "mo",
       "tech"
     ],
-    "website": "https//telegram.dog/Midukki_RoBoT",
-    "repository": "https://github.com/PR0FESS0R-99/Midukki-RoBoT",
+    "website": "https//telegram.dog/VJ_Movie_Search_RoBot",
+    "repository": "https://github.com/Vijay14958/Advanced-Autofilter-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -51,7 +51,7 @@
         "FORCE_SUB": {
             "description": "ID of channel. Without subscribing this channel users cannot use Autofilter",
             "value": "",
-            "required": false
+            "required": true
         },
         "GITHUB_USERNAME": {
             "description": "Enter Your Github Username Pr0fess0r-99",
@@ -71,17 +71,17 @@
         "API_WEB_URL": {
             "description": "Ads Web Url eg: htts://github.com",
             "value": "",
-            "required": false
+            "required": true
         },
         "API_WEB_API": {
             "description": "Ads Web Api",
             "value": "",
-            "required": false
+            "required": true
         },
         "DONATION_LINK": {
             "description": "enter your gpay, pypal etc.. link",
             "value": "",
-            "required": false
+            "required": true
         },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search & pm filter. Separate multiple users by space. Leave it empty if you don't want to restrict bot usage.",
@@ -130,8 +130,8 @@
         },
         "SUPPORT_CHAT": {
             "description": "Your Support chat url or Your Link [with https:// or https://t.me/] Don't use @",
-            "value": "https://t.me/Mo_Tech_YT",
-            "required": false
+            "value": "https://t.me/VJ_Bot_Disscussion",
+            "required": true
         }
     },
     "addons": [],
