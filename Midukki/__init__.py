@@ -17,14 +17,14 @@ def who_is_creator(id1, id2):
     
 class Accounts(object):
     API_ID = int(environ.get("API_ID", 27639102))
-    API_HASH = environ.get("API_HASH",'35142c1407be6264e68fb6bec5dcabd9')
-    BOT_TOKEN = environ.get("BOT_TOKEN",'5831408471:AAG5I4XGr-fiZck2kxTtbZF_xvNHBvsFflA')
+    API_HASH = environ.get("API_HASH","35142c1407be6264e68fb6bec5dcabd9")
+    BOT_TOKEN = environ.get("BOT_TOKEN","5831408471:AAGASWCr4oMCSeZ_yudwiOLuSi7ghn_P-m8")
     BOT_PLUGINS = environ.get("BOT_PLUGINS", "Movie Search Bot")
     BOT_SESSIONS = environ.get("BOT_SESSION", "Movie Search Bot")
 
 class Bots(object):
     BOT_ID = int(environ.get("BOT_ID", Accounts.BOT_TOKEN.split(":")[0]))
-    BOT_NAME = None # "VJMovieSearchRobot"
+    BOT_NAME = None # "Movie Search Bot"
     BOT_MENTION = None # "@VJ_Movie_Search_RoBot"
     BOT_USERNAME = None # "VJ_Movie_Search_RoBot"
     #bot up time
@@ -48,7 +48,7 @@ class Configs(object):
     START_MESSAGE = environ.get("START_MESSAGE", START_TXT)
 
     # MongoDB information
-    DATABASE_NAME = environ.get("DATABASE_NAME", "VJMovieSearchRobot")
+    DATABASE_NAME = environ.get("DATABASE_NAME", "Advanced-Autofilter-Bot")
     DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://Danger123:Danger123@cluster0.t4xrtyu.mongodb.net/?retryWrites=true&w=majority")
     COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
