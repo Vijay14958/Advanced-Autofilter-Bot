@@ -49,7 +49,7 @@ class Configs(object):
 
     # MongoDB information
     DATABASE_NAME = environ.get("DATABASE_NAME", "Advanced-Autofilter-Bot")
-    DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://Danger123:Danger123@cluster0.t4xrtyu.mongodb.net/?retryWrites=true&w=majority")
+    DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://Demo123:Demo123@cluster0.qans7w0.mongodb.net/?retryWrites=true&w=majority")
     COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
     # Groups & Channels
