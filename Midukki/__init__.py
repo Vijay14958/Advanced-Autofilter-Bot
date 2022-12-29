@@ -58,7 +58,7 @@ class Configs(object):
     CHANNELS = [int(ch) if find.search(ch) else ch for ch in environ.get('CHANNELS', '-1001855754121').split()]
     FORCE_SUB = environ.get('FORCE_SUB','-1001787446188')
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and find.search(FORCE_SUB) else None
-    FORCES_SUB_LINK = environ.get('FORCE_SUB_LINK','@VJ_Bots)
+    FORCES_SUB_LINK = environ.get('FORCE_SUB_LINK','VJ_Bots)
 
     # Media Caption
     USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
