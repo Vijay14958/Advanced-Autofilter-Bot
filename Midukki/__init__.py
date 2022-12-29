@@ -19,8 +19,8 @@ class Accounts(object):
     API_ID = int(environ.get("API_ID", 27639102))
     API_HASH = environ.get("API_HASH",'35142c1407be6264e68fb6bec5dcabd9')
     BOT_TOKEN = environ.get("BOT_TOKEN",'5831408471:AAG5I4XGr-fiZck2kxTtbZF_xvNHBvsFflA')
-    BOT_PLUGINS = environ.get("BOT_PLUGINS", "VJMovieSearchRobot")
-    BOT_SESSIONS = environ.get("BOT_SESSION", "VJMovieSearchRobot")
+    BOT_PLUGINS = environ.get("BOT_PLUGINS", "Movie Search Bot")
+    BOT_SESSIONS = environ.get("BOT_SESSION", "Movie Search Bot")
 
 class Bots(object):
     BOT_ID = int(environ.get("BOT_ID", Accounts.BOT_TOKEN.split(":")[0]))
